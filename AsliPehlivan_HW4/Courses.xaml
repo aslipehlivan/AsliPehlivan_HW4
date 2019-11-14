@@ -1,0 +1,27 @@
+﻿<Window x:Class="AsliPehlivan_HW4.Courses"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsliPehlivan_HW4"
+        mc:Ignorable="d"
+        Title="Dersler" Height="750" Width="400" Loaded="Window_Loaded">
+    <StackPanel Margin="15">
+        <Label Content="ID" Name="CourseId" Margin="1"/>
+        <TextBox Text="" Name="txtCourseID" TextWrapping="Wrap" Margin="5" TextChanged="txtCourseID_TextChanged"></TextBox>
+        <Label Content="Ders Adı" Margin="1"></Label>
+        <TextBox Text="" Name="txtCourseName" TextWrapping="Wrap" Margin="5"/>
+        <Label Content="Ders Kodu" Margin="1"></Label>
+        <TextBox Text="" Name="txtCourseCode" TextWrapping="Wrap" Margin="5"></TextBox>
+        <Label Content="Kapasite" Margin="1"></Label>
+        <TextBox Text="" Name="txtCourseQuota" TextWrapping="Wrap" Margin="5"/>
+        <Label Content="Kredi" Margin="1"></Label>
+        <TextBox Text="" Name="txtCourseCredit" TextWrapping="Wrap" Margin="5"/>
+        <Button Content="Ekle" Name="btnAdd" Margin="3" Click="btnAdd_Click" Background="YellowGreen" />
+        <Button Content="Sil" Name="btnDelete" Margin="3" Click="btnDelete_Click" Background="OrangeRed" ></Button>
+        <Button Content="Güncelle" Name="btnUpdate" Margin="3" Click="btnUpdate_Click" Background="LightSkyBlue" ></Button>
+        <DataGrid Name="dgCourses" SelectedCellsChanged="dgCourses_SelectedCellsChanged"/>
+
+
+    </StackPanel>
+</Window>

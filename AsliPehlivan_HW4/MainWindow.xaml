@@ -1,0 +1,26 @@
+﻿<Window x:Class="AsliPehlivan_HW4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsliPehlivan_HW4"
+        mc:Ignorable="d"
+        Title="Öğrenciler" Height="750" Width="400" Loaded="Window_Loaded">
+    <StackPanel Margin="15">
+        <Label Content="ID" Name="lblStudentId" Margin="1"/>
+        <TextBox Text="" TextWrapping="Wrap" Name="txtStudentID" Margin="5"></TextBox>
+        <Label Content="Adı"/>
+        <TextBox Text="" TextWrapping="Wrap" Name="txtStudentName" Margin="5" />
+        <Label Content="Soyadı"/>
+        <TextBox Text="" TextWrapping="Wrap" Name="txtStudentSurname" Margin="5" />
+        <DatePicker Name="dtpBirthDate" Margin="5"/>
+        <Button Content="Ekle" Name="btnSave" Margin="3" Click="btnSave_Click" Background="YellowGreen" ></Button>
+        <Button Content="Sil" Name="btnDelete" Margin="3" Click="btnDelete_Click" Background="OrangeRed" ></Button>
+        <Button Content="Güncelle" Name="btnUpdate" Margin="3" Click="btnUpdate_Click" Background="LightSkyBlue" ></Button>
+        
+        <Button Content="Dersler sayfasını aç" Name="btnOpenCourse" Margin="3" Click="btnOpenCourse_Click"  ></Button>
+        <DataGrid Name="dgStudents" SelectedCellsChanged="dgStudents_SelectedCellsChanged" Margin="5"/>
+
+
+    </StackPanel>
+</Window>
